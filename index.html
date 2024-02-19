@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1 class="txt-align-center">API Powered Trivia</h1>
+    <div class="disp-flex gap half-marg flex-vert">
+        <!-- Category Input -->
+        <div class="disp-flex gap flex-row">
+            <select name="category" id="catInput">
+                <option value="film">Film</option>
+                <option value="books">Books</option>
+                <option value="videogames">Video games</option>
+                <option value="music">Music</option>
+            </select>
+            <!-- Difficulty Input -->
+            <select name="difficulty" id="diffInput">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <!-- Mode Input -->
+            <select name="mode" id="modeInput">
+                <option value="multiple">Multiple</option>
+                <option value="boolean">True or False</option>
+            </select>
+        </div>
+        <!-- generate trivia button -->
+        <div class="btn-gen">
+            <button type="button" id="btn-gen-triv" onclick="generateTrivia()">Generate Trivia</button>
+        </div>
+    </div>
+    <!-- Question Text -->
+    <p class="txt-align-center question" id="q-txt">Generate a trivia to get started.</p>
+    <!-- Info -->
+    <div class="disp-flex disp-distribute">
+        <p class="txt-align-left score" id="score">Score:</p>
+        <p class="txt-align-center score" id="question-number">0/10</p>
+        <p class="txt-align-right score" id="correct-ans">Correct Answer</p>
+    </div>
+
+    <!-- Answer Buttons -->
+    <form class="disp-flex gap half-marg btn-container" action="">
+        <button onclick="btnAnswer(0)" class="btn-answer" type="button" id="btn-1">Button 1</button>
+        <button onclick="btnAnswer(1)" class="btn-answer" type="button" id="btn-2">Button 2</button>
+        <button onclick="btnAnswer(2)" class="btn-answer" type="button" id="btn-3">Button 3</button>
+        <button onclick="btnAnswer(3)" class="btn-answer" type="button" id="btn-4">Button 4</button>
+    </form>
+    <div class="btn-gen">
+        <button onclick="nextQuestion()" type="button" id="btn-next">Next Question</button>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

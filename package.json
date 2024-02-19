@@ -1,0 +1,14 @@
+{
+  "name": "trivia",
+  "version": "1.0.0",
+  "description": "Programa de trivia",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "trivia"
+  ],
+  "author": "Ari K",
+  "license": "ISC"
+}
